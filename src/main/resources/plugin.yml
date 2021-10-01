@@ -1,0 +1,36 @@
+name: ClickableShop
+version: @version@
+main: com.gmail.necnionch.myplugin.clickableshop.bukkit.ClickableShop
+api-version: 1.15
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+authors: [Necnion8]
+
+commands:
+  clickshop:
+    aliases: [cshop]
+    usage: |-
+      §cUsage: §e/clickshop §6<editor/create/delete/setnpc> (shopId)
+            §e/clickshop §6open (shopId) [player]
+
+permissions:
+  clickshop.command.open: {}
+  clickshop.command.edit: {}
+  clickshop.command.create: {}
+  clickshop.command.delete: {}
+  clickshop.command.setnpc: {}
+  clickshop.tabcomplete: {}
+
+  clickshop.defaults:
+    children: []
+    default: true
+
+  clickshop.admins:
+    children:
+      - clickshop.command.open
+      - clickshop.command.edit
+      - clickshop.command.create
+      - clickshop.command.delete
+      - clickshop.command.setnpc
+      - clickshop.command.tabcomplete
+    default: op

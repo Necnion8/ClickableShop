@@ -1,0 +1,11 @@
+prefix: "&7[&aCShop&7] &r"
+unit: "円"
+description-format: |-
+  &7==============================
+  &e値段: &6{total_price}{unit} {amount_text}
+  &7==============================
+  {description}
+  &7==============================
+  {lore}
+  &7==============================
+description-prefix: "&f"

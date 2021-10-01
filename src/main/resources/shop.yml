@@ -1,0 +1,6 @@
+display-name: null
+entries:
+  - type: MATERIAL
+    shop-type: buy
+    shop-price: INTEGER
+
